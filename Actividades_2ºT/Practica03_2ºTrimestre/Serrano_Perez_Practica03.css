@@ -1,0 +1,161 @@
+/*CSSS FIJO*/
+body {
+  text-align: center;
+}
+
+div {
+  display: inline-block;
+  width: 709px;
+  height: 327px;
+  background-color: blue;
+}
+
+header {
+  width: 642px;
+  height: 45px;
+  background-color: orange;
+  text-align: center;
+  display: inline-block;
+  margin-top: 17px;
+  margin-bottom: 10px;
+}
+
+article {
+  width: 300px;
+  height: 230px;
+  background-color: green;
+}
+
+article:first-of-type {
+
+  float: left;
+  margin-left: 34px;
+}
+
+article:last-of-type {
+
+  float: right;
+  margin-right: 34px;
+}
+/*
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< ELASTICO
+body {
+  text-align: center;
+}
+
+div {
+  display: inline-block;
+  width: 42em;
+  height: 23em;
+  background-color: blue;
+  margin-top: 15px;
+}
+
+header {
+  width: 38em;
+  height: 2em;
+  background-color: orange;
+  text-align: center;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+article {
+  width: 18em;
+  height: 17em;
+  background-color: green;
+}
+
+article:first-of-type {
+
+  float: left;
+  margin-left: 34px;
+}
+
+article:last-of-type {
+
+  float: right;
+  margin-right: 35px;
+}
+*
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FLUIDO
+body {
+  text-align: center;
+}
+
+div {
+  display: inline-block;
+  width: 50%;
+  height: 350px;
+  background-color: blue;
+  margin-top: 15px;
+}
+
+header {
+  width: 90%;
+  height: 35px;
+  background-color: orange;
+  text-align: center;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+article{
+  width: 40%;
+  height: 263px;
+  background-color: green;
+
+
+}
+article:first-of-type {
+  float: left;
+  margin-left: 34px;
+}
+
+article:last-of-type {
+  float: right;
+  margin-right: 35px;
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HIBRIDO
+body {
+  text-align: center;
+}
+
+div {
+  display: inline-block;
+  width: 50%;
+  min-width: 600px;
+  height: 350px;
+  background-color: blue;
+  margin-top: 15px;
+}
+
+header {
+  width: 90%;
+  height: 35px;
+  background-color: orange;
+  text-align: center;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+article {
+
+  width: 40%;
+  height: 263px;
+  background-color: green;
+}
+
+article:first-of-type {
+  float: left;
+  margin-left: 34px;
+}
+
+article:last-of-type {
+  float: right;
+  margin-right: 35px;
+}
+*/

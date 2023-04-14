@@ -1,0 +1,67 @@
+/* La clase "grid_container" establece un contenedor de cuadrícula con cinco columnas y cuatro filas
+ Se establece la separación entre filas y columnas 
+ Se especifica el ancho del grid 
+ Se centra el grid horizontalmente */
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5,   1fr);
+    grid-gap: 20px 10px;
+    width: 80%;
+    margin: 0 auto;
+    }
+    
+    /* La clase "cabezera" ocupa las columnas del 1 al 6 en la primera fila y tiene un fondo de color azul claro y una altura de 100px*/
+    .cabezera {
+    grid-column: 1 / 6;
+    grid-row: 1 / 1;
+    background-color: rgb(3, 191, 255);
+    height: 100px;
+
+    }
+    
+    /* La clase "sb1" tiene un fondo de color rosa claro y ocupa la primera columna en las filas 2 a 4. Su altura es de 300 píxeles */
+    .sb1 {
+    background-color: rgb(253, 170, 170);
+    grid-column: 1 / 2;
+    grid-row: 2 / 5;
+    }
+    
+    /* La clase "Principal" ocupa las columnas 2 a 5 en la fila 2 y tiene un fondo de color amarillo */
+    .Principal {
+    grid-column: 2 / 5;
+    grid-row: 2 / 4;
+    background-color: rgb(255, 255, 0);
+    }
+    
+    /* Las clases "e1", "e2" y "e3" tienen un fondo de color amarillo claro y ocupan la segunda columna en la tercera fila */
+    .e1 {
+    grid-column: 2 / 2;
+    grid-row: 4 / 4;
+    background-color: rgb(240, 195, 49);
+    }
+    
+    .e2 {
+    grid-column: 3 / 3;
+    grid-row: 4 / 4;
+    background-color: rgb(240, 195, 49);
+    }
+    
+    .e3 {
+    grid-column: 4 / 4;
+    grid-row: 4 / 4;
+    background-color: rgb(240, 195, 49);
+    }
+    
+    /* La clase "sb2" tiene un fondo de color morado claro y ocupa la quinta columna en las filas 2 a 4 */
+    .sb2 {
+    grid-column: 5 / 5;
+    grid-row: 2 / 5;    background-color: rgb(253, 170, 241);
+    }
+    
+    /* La clase "pie" ocupa las columnas del 1 al 6 en la última fila y tiene un fondo de color verde claro */
+    .pie {
+    grid-column: 1 / 6;
+    grid-row: 5 /5;
+    background-color: rgb(80, 241, 82);
+    }

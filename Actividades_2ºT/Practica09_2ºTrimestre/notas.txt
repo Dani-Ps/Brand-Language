@@ -1,0 +1,6 @@
+menu stiky
+img con elmento con enlace posicion relativa y obsolute
+serccion 3 logos  debajo lineas incompletas de separacion
+elementos de flotacion
+galerias de img
+footer stiky

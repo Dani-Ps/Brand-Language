@@ -1,0 +1,59 @@
+
+
+div {
+    border: 6px solid black;
+    position: relative;
+    width: 52%;
+    margin-left: 20%;
+    margin-top: 1%;
+
+}
+
+img {
+    overflow-y: auto;
+    width: 150px;
+    height: 150px;
+}
+
+
+.primero {
+    column-count: 3;
+    column-span: all;
+    column-gap: 25px;
+}
+
+.segundo {
+    column-rule: 6px solid red;
+    column-count: 3;
+    column-gap: 25px;
+
+
+}
+
+.tercero {
+    column-rule: 6px solid rgb(97, 150, 196);
+    column-count: 3;
+    column-gap: 25px;
+    column-span: all;
+}
+
+.cuarto{
+    overflow-y: auto;
+ 
+}
+
+.parrafo {
+    column-span: all;
+}
+
+.parrafo3 {
+    break-inside: avoid;
+}
+
+.lastimg {
+    float: right; 
+
+}
+.ultParrafo{
+    clear: right;
+}

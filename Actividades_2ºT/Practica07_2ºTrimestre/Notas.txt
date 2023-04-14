@@ -1,0 +1,22 @@
+En el padre {
+    column-count: 3;
+    column-rude: 2ps solid..
+    column-gap: 50px
+    column-span: all
+}
+
+En los parrafos {
+    break-inside:avoid;
+}
+
+Elementos FLOTANTES {
+
+    float: left;
+    float: right;
+}
+
+Clear-Right: deja hueco a la derecha para que en la etiqueta donde lo utilices coja toda la derecha 
+doverflow-y: auto para ajustar automaticamente
+
+EN EL 2 PARRAFO PROPIEDAD NO ROMPER PARRAFO
+EN EL ULTM. PROP BREAK-INSIDE

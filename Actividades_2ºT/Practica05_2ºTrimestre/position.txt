@@ -1,0 +1,6 @@
+tiutlo posicion relative h1--->> position: sticky
+la barra rosa de abajo es fixed en el bottom
+
+position absolute: posicionar elemento respecto a su padre que es en posicion relative, cuadraditos 
+
+propieda z-index cuando 2 elementos se superponen, el q se superpone es porque tiene un z-index mayor cuadradito verde 

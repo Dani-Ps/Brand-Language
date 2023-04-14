@@ -1,0 +1,80 @@
+html {
+    background-color: rgb(210, 180, 140);
+}
+
+
+hr {
+    border-style: dotted;
+    color: blue;
+}
+
+* {
+    font-family: verdana;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:link {
+    color: green;
+
+}
+
+#encabezado h1,
+h2,
+cite {
+
+    font-weight: bold;
+    color: rgb(128, 0, 0);
+    display: inline;
+   
+}
+#encabezado {
+    padding-top:27px ;
+    padding-bottom: 27px;
+}
+
+.celda::first-line {
+
+    color: aquamarine;
+
+}
+
+.spain a {
+    display: block;
+}
+
+.spain:first-letter {
+    color: blue;
+    font-size: 2em;
+    font-style: oblique;
+}
+
+.parrafos {
+    display: table;
+}
+
+.fila {
+    display: table-row;
+
+}
+
+.celda {
+    display: table-cell;
+    border: 1px solid black;
+    color: rgb(128, 0, 0);
+
+
+}
+
+.parrafos p:first-letter {
+    color: blue;
+    font-size: 2em;
+    font-style: oblique;
+
+}
+
+.last p {
+    display: inline;
+}

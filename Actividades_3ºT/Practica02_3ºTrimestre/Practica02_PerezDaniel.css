@@ -1,0 +1,139 @@
+/* Define las propiedades del cuerpo */
+body {
+    width: 90%;
+    height: 100vh;
+    box-sizing: border-box; /* Cambia content-box a border-box para incluir el borde en el ancho del elemento */
+    font-family: cursive;
+    color: gray;
+    margin: 0 auto;
+}
+
+/* Define el espacio entre el encabezado de nivel 2 y el siguiente elemento */
+h2 {
+    margin-bottom: 10%; /* Cambia padding-bottom a margin-bottom */
+}
+
+/* Define el espacio entre el párrafo y el siguiente elemento */
+p {
+    margin-bottom: 10%; /* Cambia padding-bottom a margin-bottom */
+}
+
+/* Define las propiedades del encabezado */
+header {
+    width: 100%;
+    color: gray;
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+
+/* Define las propiedades del primer vector */
+.primer-vector {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Agrega justify-content para distribuir los elementos uniformemente */
+    padding: 1% 0; /* Elimina los valores duplicados */
+}
+
+/* Define las propiedades de la navegación */
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 16%;
+    margin: 0; /* Elimina el valor "auto" de la propiedad "margin" */
+}
+
+nav div {
+    padding: 10px; /* Simplifica el valor de "padding" eliminando valores duplicados */
+}
+
+
+/* Estilo para el contenido principal del primer vector */
+.primer-vector main {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+
+}
+
+/* Estilo para el contenido del articulo del primer vector */
+
+
+.primer-vector article {
+    width: 33%;
+    margin: 0 auto;
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+
+}
+/* Estilo para el contenido de la img del primer vector */
+
+.primer-vector img {
+    width: 80%;
+    height: 400px;
+    padding: 2% 0 2% 0;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+/* Estilo para el contenido de la img que está dentro del main del primer vector */
+.primer-vector article img {
+    width: 90%;
+}
+
+/* Estilo para el contenido principal del segundo vector */
+.segundo-vector {
+    width: 90%;
+    display: flex;
+    color: gray;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0 10%;
+}
+/* Estilo para el contenido de la img del segundo vector */
+.segundo-vector img {
+    width: 90%;
+    height: 280px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    padding: 2% 0 2% 0;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+/* Estilo para el contenido del aticle del primer vector */
+.segundo-vector article {
+    width: 32%;
+    border: 1px solid gray;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+/* Estilo para el contenido del footer */
+footer {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid gray;
+    margin: 2% 0 2% 0;
+    align-items: end;
+    position: sticky;
+    bottom: 0;
+}

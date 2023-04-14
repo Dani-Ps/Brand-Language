@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+/*Cabezera, dentro de ella hay un nav, dentro de este nav a su vez hay contenido una lista desordenada*/
+header {
+  width: 100%;
+  background-color: #12121248;
+  position: fixed;
+  padding: 0.5%;
+  z-index: 1;
+  -webkit-transition: transform 2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  -moz-transition: transform 2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  -ms-transition: transform 2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  -o-transition: transform 2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+/*Para el efecto de ampliacion de la cabecera se utiliza este comando*/
+header:hover {
+  transform: scale(1.2);
+}
+
+header nav img {
+  width: 0.8%;
+}
+/*Aqui estan los elementos de la lista, que a su vez estan dentro del nav de la cabecera*/
+
+li {
+  display: inline;
+  color: white;
+  padding: 1%;
+  font-size: 0.7em;
+
+}
+/*Aqui especifico que el */
+li a:visited,
+li a:link,
+li a:active {
+  color: white;
+  text-decoration: none;
+}
+
+
+/*Barra lateral derecha de iconos */
+.barra {
+  position: absolute;
+  right: 1%;
+  top: 20%;
+  width: 3%;
+
+}
+
+.barra .icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+.barra .icon span {
+  width: 30px;
+  border-radius: 100%;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.icon:hover {
+  transform: translateY(-12px);
+}
+
+.barra .facebook:hover span {
+  background: #3564c9;
+}
+
+.barra .twitter:hover span {
+  background: #0ba2e3;
+}
+
+.barra .instagram:hover span {
+  background: #e52766;
+}
+
+.barra .whatsapp:hover span {
+  background: #25ac3a;
+}
+
+.barra .youtube:hover span {
+  background: #e02619;
+}
+
+
+i img {
+  margin-top: 3px;
+  width: 70%;
+}
+
+/*Conenedor */
+
+.container {
+  position: static;
+  height: auto;
+  width: 100%;
+  padding-bottom: 1%;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p {
+  padding: 10px 0 10px 0;
+  font-size: 1.5em;
+}
+
+a:visited,
+a:link,
+a:active {
+  color: rgb(33, 123, 208);
+  text-decoration: none;
+
+}
+/*Primer hijo con foto de iphone */
+
+.hijo1 {
+  background: #000000;
+  color: white;
+  padding-top: 4%;
+}
+
+.iphone14 {
+  height: 500px;
+  position: relative;
+  animation: movimientoIphone 3.5s 1;
+  -webkit-animation: movimientoIphone 3.5s 1;
+}
+
+
+@keyframes movimientoIphone {
+  from {
+    top: -250px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+/*Segundo hijo con foto de varios iphone */
+.hijo2 {
+  color: black;
+  padding-top: 4%;
+  background-color: white;
+}
+
+
+.iphones {
+  position: relative;
+  animation: movimientoIphones 5s 1;
+  -webkit-animation: movimientoIphones 5s 1;
+  padding-top: 2%;
+}
+
+@keyframes movimientoIphones {
+  from {
+    right: -1500px;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+/*Tercer hijo con foto de los relojes */
+.hijo3 {
+  background: #000000;
+  color: white;
+  padding-top: 4%;
+}
+
+
+.hijo3 h1 img {
+  width: 1.6%;
+}
+
+.red {
+  color: rgb(204, 33, 39);
+}
+
+.hijo3 img {
+  max-height: 400px;
+}
+
+.watch1 {
+  position: relative;
+  animation: movimientoreloj1 5s 2;
+  -webkit-animation: movimientoreloj1 5s 2;
+}
+
+@keyframes movimientoreloj1 {
+  from {
+    left: 350px;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+.watch2 {
+  position: relative;
+  animation: movimientoreloj2 5s 2;
+  -webkit-animation: movimientoreloj2 5s 2;
+}
+
+@keyframes movimientoreloj2 {
+  from {
+    right: 350px;
+  }
+
+  to {
+    right: 0;
+  }
+}
+/*Cuarto hijo, dentro de este se encuentra 4 cajas más con las misma caracteriticas de los hijos1-3 */
+.hijo4 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 0.5%;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  font-size: smaller;
+}
+
+.hijo4 div img {
+  max-width: 350px;
+  transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.hijo4 img:hover {
+  transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
+}
+
+/*Primera caja del hijo4 con foto de ipad */
+.box1 {
+  padding-top: 2%;
+  background-color: white;
+}
+
+/*Segunda caja del hijo4 con foto de portatil */
+
+.box2 {
+  padding-top: 2%;
+  color: white;
+  background: #000000;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+/*Tercera caja del hijo4 con foto de portatil */
+.box3 {
+  padding-top: 2%;
+  color: white;
+  background: #000000;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+/*Tercera caja del hijo4 con foto de auriculares */
+
+.box4 {
+  padding-top: 2%;
+  color: white;
+  background: #000000;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+/*Parte de abajo de la pagina dentro del footer tengo un div padre y dentro de este uno hijo*/
+footer {
+  padding-top: 3%;
+  padding-bottom: 1%;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  color: #444447;
+  background-color: transparent;
+  overflow: hidden;
+  -webkit-transition: transform 2s cubic-bezier(0, 0.27, 0.32, 1.28);
+  -moz-transition: transform 2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  -ms-transition: transform 2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  -o-transition: transform 2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+
+}
+
+/*Le da una trnasicion de ampliacion al footer*/
+footer:hover {
+  transform: scale(1.2);
+}
+
+/*Div padre*/
+.fpadre {
+  width: 50%;
+  display: inline-block;
+  max-height: 35px;
+
+}
+
+.fpadre p {
+  font-size: 0.8vmin;
+  padding-bottom: 3px;
+}
+
+/*Div hijo, aqui lo unico que ajusto es el texto*/
+.fhijo p {
+  display: inline-block;
+  border-right: 1px solid #444447;
+  padding-inline: 1%;
+  font-size: 0.6vmin;
+  max-height: 25px;
+}
+
+/*Formulario*/
+form {
+  width: 400px;
+  height: 370px;
+  background-color: rgba(39, 37, 37, 0.281);
+  border-radius: 20px;
+  backdrop-filter: blur(30px);
+  float: left;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 0;
+  top: 62%;
+  margin: 0 0 0 20px;
+  animation: movimientoForm 4s 1;
+  -webkit-animation: movimientoForm 4s 1;
+}
+
+
+/*Esto define el movimiento que va a tener el formulario completo a traves de la pagina*/
+@keyframes movimientoForm {
+  from {
+    left: -450px;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+form h2 {
+  margin-top: 20px;
+  color: white;
+}
+
+.user-box {
+  position: relative;
+  margin: 25px 0px 0 15px;
+  width: 300px;
+  border-bottom: 2px solid white;
+
+}
+
+.user-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  pointer-events: none;
+  color: white;
+  transition: .5s;
+}
+
+.user-box input {
+  width: 80%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0px 35px 0px 5px;
+  color: white;
+}
+
+input:focus~label {
+  top: -5px;
+}
+
+span {
+  margin-top: 15px;
+  color: white;
+}
+
+button {
+  width: 80%;
+  height: 40px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 20px;
+  margin: 3vh;
+  cursor: pointer;
+}
+

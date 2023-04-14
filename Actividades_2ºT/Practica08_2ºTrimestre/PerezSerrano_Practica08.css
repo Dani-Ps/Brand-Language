@@ -1,0 +1,132 @@
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0%;
+    height: 25px;
+    width: 75%;
+    z-index: 100;
+    position: relative;
+    padding-top: 1%;
+    color: white;
+    margin-left: 12%;
+    top: 0%;
+}
+
+nav>div {
+    display: inline;
+    padding-left: 11px;
+    padding-bottom: 10px;
+    width: 80%;
+    margin-right: 10%;
+   
+
+}
+
+.padre {
+    position: relative;
+    width: 80%;
+    height: 550px;
+    z-index: 2;
+    margin-left: 10%;
+
+}
+
+img {
+    display: inline;
+    width: 45%;
+    height: 60%;
+    padding-top: 5%;
+}
+
+.primero {
+    border: 1.5px solid black;
+    column-count: 1;
+    margin-top: 3%;
+    border: radius 3%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+    width: 25%;
+    height: 50%;
+    float: left;
+    text-align: center;
+    font-size: 0.8em;
+    margin-left: 20%;
+    display: inline;
+    
+}
+.primero>p{
+    margin-bottom:10px ;
+    margin-left:10px ;
+    margin-right: 10px ;
+}
+.segundo>p{
+    margin-bottom:10px ;
+    margin-left:10px ;
+    margin-right: 10px ;
+}
+
+.segundo{
+    border: 1.5px solid black;
+    column-count: 1;
+    column-span: all;
+    margin-top: 3%;
+    border: radius 3%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+    width: 25%;
+    height: 50%;
+    float: left;
+    text-align: center;
+    font-size: 0.8em;
+    display: inline;
+
+}
+
+
+.hijo {
+    width: 75%;
+    column-count:3;
+    margin-top: 2%;
+    float: left;
+    margin-left: 20%;
+}
+
+.perfil {
+    background-color: rgb(0, 0, 0);
+    width: 8%;
+    height: 50%;
+    position: fixed;
+    top: 17%;
+    left: 0px;
+    color: white;
+    padding: 1%;
+    margin-left: 12.3%;
+}
+
+
+.perfil div {
+    margin-bottom: 20%;
+}
+
+
+footer{
+    color: black;
+    background-color: rgb(211, 211, 211);
+    position: sticky;
+    width:75%;
+    display: inline-block;
+    text-align: center;
+    top: 50%;
+    margin-left: 12%;
+    z-index: 100;
+}
