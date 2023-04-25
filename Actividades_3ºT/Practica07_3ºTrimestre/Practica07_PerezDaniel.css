@@ -1,0 +1,187 @@
+/* Establece la propiedad box-sizing en border-box para todos los elementos */
+* {
+    box-sizing: border-box;
+}
+
+/* Establece el ancho en 80% y los márgenes en 0 automático para el cuerpo de la página */
+body {
+    width: 80%;
+    margin: 0 auto;
+    height: 1000px;
+}
+
+/* Establece el contenedor como un grid con 3 columnas y 6 filas */
+#container {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 200px 80px 400px 25px 300px 200px;
+}
+
+/* Establece la cabecera como una fila que ocupa las 3 columnas, con un fondo negro y texto blanco. También se establece como un contenedor flexible con elementos centrados en el eje horizontal y vertical. */
+#cabecera {
+    background-color: black;
+    color: white;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Establece la barra de navegación 1 como una celda que ocupa la primera columna, con un fondo verde oscuro. */
+#nav1 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: rgb(90, 130, 100);
+}
+
+/* Establece la barra de navegación 2 como una celda que ocupa la segunda columna, con un fondo verde oscuro, texto blanco y elementos centrados en el eje horizontal y vertical. */
+#nav {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: rgb(90, 130, 100);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*Establece el estilo para el segundo elemento de navegación. 
+Define la posición del elemento en la cuadrícula y establece el color de fondo.*/
+#nav2 {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    background-color: rgb(90, 130, 100);
+}
+
+/*Establece el estilo para el contenedor del logotipo. Define la anchura, altura y el color de fondo. 
+También establece la posición del elemento en la cuadrícula, centrándolo horizontalmente 
+y añadiendo un margen superior. Además, añade un borde redondeado al elemento.*/
+#logo {
+    width: 60%;
+    height: 70%;
+    background-color: rgb(186, 184, 184);
+    grid-row: 3/4;
+    grid-column: 1/2;
+    justify-self: center;
+    margin-top: 10%;
+    border-radius: 10px;
+
+}
+
+/*Establece el estilo para la imagen dentro del contenedor del logotipo. Define el
+ tamaño de la imagen y el margen izquierdo para centrar la imagen horizontalmente dentro del contenedor.*/
+#logo img {
+    width: 75%;
+    height: 65%;
+    margin-left: 13%;
+
+}
+
+/*Establece el estilo para el título del logotipo. 
+Añade un margen izquierdo para centrar el texto horizontalmente dentro del contenedor del logotipo.*/
+#logo h4 {
+    margin-left: 13%;
+}
+
+/*Establece el estilo para el contenedor de la imagen. Define la posición del elemento 
+en la cuadrícula, centrando horizontalmente el elemento y añadiendo un margen superior.*/
+#imagen {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    text-align: center;
+    margin-top: 2%;
+}
+
+/*: Establece el estilo para la imagen dentro del contenedor de la imagen. */
+#imagen img {
+    width: 80%;
+}
+
+/*establece las propiedades para el calendario, como su tamaño, su posición en la cuadrícula y 
+su color de fondo. 
+Además, se centra en la página con justify-self y se le da un borde redondeado con border-radius*/
+#calendario {
+    width: 60%;
+    height: 70%;
+    grid-row: 3/4;
+    grid-column: 3/4;
+    background-color: rgb(186, 184, 184);
+    margin-top: 10%;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+/*establece el tamaño y la posición de la imagen dentro del calendario.*/
+#calendario img {
+    width: 75%;
+    height: 65%;
+    margin-left: 13%;
+
+}
+
+/*establece la posición del encabezado del calendario.*/
+#calendario h4 {
+    margin-left: 13%;
+}
+
+/*establece las propiedades para la sección de categorías,
+ como su posición en la cuadrícula y su color de fondo, así como un borde inferior verde.*/
+#categorias {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    background-color: rgb(187, 184, 184);
+    border-bottom: 2px solid green;
+
+}
+
+/*establece las propiedades para la sección de árbol, como su posición en la cuadrícula, 
+su color de fondo y su borde verde. Además, se utiliza display: flex para organizar 
+los elementos dentro de esta sección y justify-content: space-between para separarlos.*/
+#arbol {
+    grid-row: 5/6;
+    grid-column: 2/3;
+    background-color: rgb(187, 184, 184);
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5%;
+    border-radius: 10px;
+}
+
+/*establece el color del texto de la lista dentro de la sección de árbol en verde.*/
+#arbol li {
+    color: green;
+}
+
+/*establece el color del texto normal dentro de la sección de árbol en negro.*/
+#arbol span {
+    color: black;
+}
+
+/*establece el tamaño y la alineación de las imágenes dentro de la sección de árbol.*/
+#arbol img {
+    align-self: last baseline;
+    width: 10%;
+}
+/*stablece las propiedades para el pie de página, como su posición en la cuadrícula,
+ su color de fondo y su color de texto. Además, 
+ se utiliza text-align: center para centrar el texto 
+ y flex-direction: column para organizar los elementos verticalmente.*/
+#footer {
+    grid-row: 6/7;
+    grid-column: 1/4;
+    background-color: rgb(35, 34, 35);
+    color: white;
+    margin-top: 1%;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*establece el tamaño de la imagen*/
+#footer img {
+    height: 20%;
+    width: 10%;
+}
